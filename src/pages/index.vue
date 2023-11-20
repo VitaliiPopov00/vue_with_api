@@ -64,171 +64,8 @@
     </div>
     
     <div class="container">
-        <div class="row g-3">
-            <div class="col-md-4">
-                <div class="card mx-2">
-    
-                    <img src="images/plug.png" class="card-img-top" alt="...">
-    
-                    <div class="card-body">
-                        <h5 class="card-title">Вид животного</h5>
-                        <p class="card-text">Описание</p>
-                    </div>
-    
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Район</li>
-                        <li class="list-group-item">Клеймо</li>
-                        <li class="list-group-item">Номер телефона пользователя</li>
-                        <li class="list-group-item">Имя пользователя</li>
-                        <li class="list-group-item">Дата публикации</li>
-                    </ul>
-    
-                    <div class="card-body alert-success">Зарегестрированный пользователь</div>
-    
-                    <div class="card-body">
-                        <a href="pet.html" class="card-link">Перейти к публикации</a>
-                    </div>
-    
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card mx-2">
-    
-                    <img src="images/plug.png" class="card-img-top" alt="...">
-    
-                    <div class="card-body">
-                        <h5 class="card-title">Вид животного</h5>
-                        <p class="card-text">Описание</p>
-                    </div>
-    
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Район</li>
-                        <li class="list-group-item">Клеймо</li>
-                        <li class="list-group-item">Номер телефона пользователя</li>
-                        <li class="list-group-item">Имя пользователя</li>
-                        <li class="list-group-item">Дата публикации</li>
-                    </ul>
-    
-                    <div class="card-body alert-success">Зарегестрированный пользователь</div>
-    
-                    <div class="card-body">
-                        <a href="pet.html" class="card-link">Перейти к публикации</a>
-                    </div>
-    
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card mx-2">
-    
-                    <img src="images/plug.png" class="card-img-top" alt="...">
-    
-                    <div class="card-body">
-                        <h5 class="card-title">Вид животного</h5>
-                        <p class="card-text">Описание</p>
-                    </div>
-    
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Район</li>
-                        <li class="list-group-item">Клеймо</li>
-                        <li class="list-group-item">Номер телефона пользователя</li>
-                        <li class="list-group-item">Имя пользователя</li>
-                        <li class="list-group-item">Дата публикации</li>
-                    </ul>
-    
-                    <div class="card-body alert-danger">Незарегестрированный пользователь</div>
-    
-                    <div class="card-body">
-                        <a href="pet.html" class="card-link">Перейти к публикации</a>
-                    </div>
-    
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card mx-2">
-    
-                    <img src="images/plug.png" class="card-img-top" alt="...">
-    
-                    <div class="card-body">
-                        <h5 class="card-title">Вид животного</h5>
-                        <p class="card-text">Описание</p>
-                    </div>
-    
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Район</li>
-                        <li class="list-group-item">Клеймо</li>
-                        <li class="list-group-item">Номер телефона пользователя</li>
-                        <li class="list-group-item">Имя пользователя</li>
-                        <li class="list-group-item">Дата публикации</li>
-                    </ul>
-    
-                    <div class="card-body alert-success">Зарегестрированный пользователь</div>
-    
-                    <div class="card-body">
-                        <a href="pet.html" class="card-link">Перейти к публикации</a>
-                    </div>
-    
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card mx-2">
-    
-                    <img src="images/plug.png" class="card-img-top" alt="...">
-    
-                    <div class="card-body">
-                        <h5 class="card-title">Вид животного</h5>
-                        <p class="card-text">Описание</p>
-                    </div>
-    
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Район</li>
-                        <li class="list-group-item">Клеймо</li>
-                        <li class="list-group-item">Номер телефона пользователя</li>
-                        <li class="list-group-item">Имя пользователя</li>
-                        <li class="list-group-item">Дата публикации</li>
-                    </ul>
-    
-                    <div class="card-body alert-danger">Незарегестрированный пользователь</div>
-    
-                    <div class="card-body">
-                        <a href="pet.html" class="card-link">Перейти к публикации</a>
-                    </div>
-    
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card mx-2">
-    
-                    <img src="images/plug.png" class="card-img-top" alt="...">
-    
-                    <div class="card-body">
-                        <h5 class="card-title">Вид животного</h5>
-                        <p class="card-text">Описание</p>
-                    </div>
-    
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Район</li>
-                        <li class="list-group-item">Клеймо</li>
-                        <li class="list-group-item">Номер телефона пользователя</li>
-                        <li class="list-group-item">Имя пользователя</li>
-                        <li class="list-group-item">Дата публикации</li>
-                    </ul>
-    
-                    <div class="card-body alert-success">Зарегестрированный пользователь</div>
-    
-                    <div class="card-body">
-                        <a href="pet.html" class="card-link">Перейти к публикации</a>
-                    </div>
-    
-                </div>
-            </div>
-    
-            <div class="alert-warning col-12 p-3">Животных не найдено</div>
-        </div>
+        <card-list :pets="lastFindPets"/>
+        <div class="alert-warning col-12 p-3">Животных не найдено</div>
     </div>
     
     <div class="container">
@@ -246,7 +83,26 @@
 
 <script>
     export default {
-        
+        data() {
+            return {
+                lastFindPets: [],
+            }
+        },
+        methods: {
+            async getLastFindPets() {
+                console.log('test');
+                try {
+                    let response = await fetch(localStorage.getItem('homeUrl') + 'api/pets');
+                    let data = await response.json()
+                    this.lastFindPets = data.data.order;
+                } catch {
+
+                }
+            }
+        },
+        mounted() {
+            this.getLastFindPets();
+        }
     }
 </script>
 
