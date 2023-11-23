@@ -4,7 +4,7 @@ import router from './router'
 import components from './components';
 
 if (!localStorage.getItem('homeUrl')) {
-    localStorage.setItem('homeUrl', 'http://animal/');
+    localStorage.setItem('homeUrl', 'http://localhost/');
 }
 
 const app = createApp(App);

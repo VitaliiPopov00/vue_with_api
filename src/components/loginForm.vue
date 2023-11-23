@@ -48,11 +48,17 @@
 
                     let data = await response.json()
 
-                    if (response.status > 400) {
-                        throw new Error(JSON.stringify(data));
-                    } else {
-                        localStorage.setItem('token', data.data.token);
-                        this.$router.push('/')
+                    switch (response.status) {
+                        case 422:
+                            throw new Error(JSON.stringify(data));
+                            break;
+                        case 401:
+                            this.errors.email_error = "Пользователь не найден или пароль введен неверно";
+                            break;
+                        default:
+                            localStorage.setItem('token', data.data.token);
+                            this.$router.push('/');
+                            break;
                     }
                 } catch (e) {
                     let data = JSON.parse(e.message);
@@ -62,8 +68,6 @@
                     }
                     
                     this.data.password = '';
-                    this.data.password_repeat = '';
-                    this.data.confirm = false;
                 }
             },
             clearError(name) {

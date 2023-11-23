@@ -1,9 +1,11 @@
 <template>
-    <div class="row g-3">
-        <card-pet 
-            v-for="pet in pets"
-            :pet="pet"
-        />
+    <div class="container">
+        <div class="row g-3">
+            <card-pet 
+                v-for="pet in pets"
+                :pet="pet"
+            />
+        </div>
     </div>
 </template>
 
