@@ -8,19 +8,19 @@
             </a>
 
             <ul class="nav col-12 col-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" @click.prevent="$router.push('/')" class="nav-link px-2 link-dark">Главная</a></li>
-                <li><a href="#" @click.prevent="$router.push('/search')" class="nav-link px-2 link-dark">Поиск</a></li>
-                <li><a href="#" @click.prevent="$router.push('/profile')" class="nav-link px-2 link-dark">Профиль</a></li>
-                <li><a href="#" @click.prevent="$router.push('/create')" class="nav-link px-2 link-dark">Разместить объявление</a></li>
+                <li><router-link to="/" class="nav-link px-2 link-dark">Главная</router-link></li>
+                <li><router-link to="/search" class="nav-link px-2 link-dark">Поиск</router-link></li>
+                <li><router-link to="/profile" class="nav-link px-2 link-dark">Профиль</router-link></li>
+                <li><router-link to="/create" class="nav-link px-2 link-dark">Разместить объявление</router-link></li>
             </ul>
 
             <div class="col-lg-3 text-end" v-if="!token">
-                <a href="#" @click.prevent="$router.push('/register')" type="button"
-                    class="btn btn-outline-primary me-2">Регистрация</a>
-                <a href="#" @click.prevent="$router.push('/login')" type="button" class="btn btn-primary">Войти</a>
+                <router-link to="/register" type="button"
+                    class="btn btn-outline-primary me-2">Регистрация</router-link>
+                <router-link to="/login" type="button" class="btn btn-primary">Войти</router-link>
             </div>
             <div class="col-lg-3 text-end" v-else>
-                <a href="#" @click.prevent="logout" type="button" class="btn btn-primary">Выйти</a>
+                <router-link to="/" type="button" class="btn btn-primary">Выйти</router-link>
             </div>
         </header>
     </div>
