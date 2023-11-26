@@ -1,5 +1,5 @@
 <template>
-    <div class="container"  v-if="pet">
+    <div class="container" v-if="pet">
         <div class="card border-0">
             <div class="d-flex justify-content-center flex-wrap flex-md-nowrap">
                 <img src="/images/plug.png" class="m-2 max-w-33 img-thumbnail" alt="...">
@@ -30,6 +30,7 @@
                     <li class="list-group-item">{{ pet.date }}</li>
                 </ul>
             </div>
+            <router-link class="btn btn-primary" :to="{ name: 'update', params: { id: pet.id } }">Редактировать</router-link>
         </div>
     </div>
     <my-spinner v-else/>

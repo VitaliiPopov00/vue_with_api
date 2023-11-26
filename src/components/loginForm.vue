@@ -1,5 +1,8 @@
 <template>
     <form action="profile.html" class="sign-height">
+        <div class="alert alert-warning" role="alert" v-if="errorMessage">
+            {{ errorMessage }}
+        </div>
         <h2 class="mb-3">Войти в свой аккаунт</h2>
         <div class="form-floating mb-3">
             <input @input="clearError('email')" v-model="data.email" :class="{ 'is-invalid': errors.email_error }" type="email" class="form-control" placeholder=".">
@@ -33,6 +36,7 @@
                     email_error: '',
                     password_error: '',
                 },
+                errorMessage: localStorage.getItem('errorMessage') || false,
             }
         },
         methods: {
@@ -46,7 +50,7 @@
                         body: JSON.stringify(this.data),
                     });
 
-                    let data = await response.json()
+                    let data = await response.json();
 
                     switch (response.status) {
                         case 422:
@@ -57,7 +61,7 @@
                             break;
                         default:
                             localStorage.setItem('token', data.data.token);
-                            this.$router.push('/');
+                            this.$router.push({ name: 'index' });
                             break;
                     }
                 } catch (e) {
@@ -73,6 +77,14 @@
             clearError(name) {
                 this.errors[`${name}_error`] = '';
             },
+        },
+        mounted() {
+            if (this.errorMessage) {
+                setTimeout(() => {
+                    this.errorMessage = false;
+                    localStorage.removeItem('errorMessage');
+                }, 5000);
+            }
         }
     }
 </script>

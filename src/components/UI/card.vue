@@ -7,17 +7,17 @@
                 <p class="card-text">{{ pet.description }}</p>
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">{{ pet.district }}</li>
-                <li class="list-group-item">{{ pet.mark }}</li>
-                <li class="list-group-item">{{ pet.phone }}</li>
-                <li class="list-group-item">{{ pet.name }}</li>
-                <li class="list-group-item">{{ pet.date }}</li>
+                <li class="list-group-item">{{ pet.district || '-' }}</li>
+                <li class="list-group-item">{{ pet.mark || '-' }}</li>
+                <li class="list-group-item">{{ pet.phone || '-' }}</li>
+                <li class="list-group-item">{{ pet.name || '-' }}</li>
+                <li class="list-group-item">{{ pet.date || '-' }}</li>
             </ul>
             <div class="card-body" :class="{ 'alert-success': pet.registred, 'alert-danger': !pet.registred }">
                 {{ pet.registred ? 'Зарегистрированный пользователь' : 'Незарегистрированный пользователь' }}
             </div>
             <div class="card-body">
-                <a href="#" @click.prevent="$router.push('/pet/' + pet.id)" class="card-link">Перейти к публикации</a>
+                <router-link :to="{ name: 'pet', params: { id: pet.id } }" class="card-link">Перейти к публикации</router-link>
             </div>
         </div>
     </div>

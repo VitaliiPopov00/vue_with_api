@@ -2,8 +2,9 @@
     <div class="container">
         <div class="row g-3">
             <card-pet 
-                v-for="pet in pets"
+                v-for="pet, index in pets"
                 :pet="pet"
+                :key="index"
             />
         </div>
     </div>
@@ -16,7 +17,7 @@
             pets: {
                 type: Array,
                 required: true,
-            }
+            },
         }
     }
 </script>

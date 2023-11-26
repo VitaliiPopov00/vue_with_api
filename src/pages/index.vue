@@ -27,8 +27,8 @@ export default {
                 let response = await fetch(localStorage.getItem('homeUrl') + 'api/pets');
                 let data = await response.json()
                 this.lastFindPets = data.data.orders;
-            } catch {
-
+            } catch(e) {
+                console.log(e.message);
             }
         },
     },
